@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NEFORCEO/django-pydantic/master/docs/static/logo.svg" alt="django-pydantic-client" width="520">
+</p>
+
 # django-pydantic-client
 
 **django-pydantic-client** позволяет заменить ручной парсинг запросов на Pydantic-модели. Передай Django `HttpRequest` напрямую в схему — получи валидированный типизированный объект или автоматический HTTP 422, если данные невалидны.
