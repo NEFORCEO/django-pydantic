@@ -47,7 +47,7 @@ from .schema import HelloSchema
 
 def hello(request):
     data = HelloSchema(request)  # (1)!
-    return JsonResponse({"message": f"Привет, {data.name}!"})
+    return JsonResponse({"message": f"Привет, {data.name}!"}, json_dumps_params={"ensure_ascii": False})
 ```
 
 1.  Если `name` отсутствует или невалиден, Pydantic бросает `ValidationError`.
