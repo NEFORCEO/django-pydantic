@@ -1,27 +1,24 @@
 from __future__ import annotations
 
+from typing import TypeVar, cast
+
 from pydantic import BaseModel
 
 _PydanticMeta = type(BaseModel)
+_T = TypeVar("_T")
 
 
 class _RequestModelMeta(_PydanticMeta):
-    """Metaclass that intercepts instantiation with a Django HttpRequest.
-
-    Allows ``MySchema(request)`` and ``MySchema(request, pk=pk)`` in addition
-    to the standard Pydantic ``MySchema(field=value, ...)`` call style.
-    """
-
-    def __call__(cls, *args: object, **kwargs: object) -> object:
+    def __call__(cls: type[_T], *args: object, **kwargs: object) -> _T:
         from django.http import HttpRequest
 
         from .request import extract_data
 
         if args and isinstance(args[0], HttpRequest):
             data = extract_data(args[0], **kwargs)
-            return super().__call__(**data)
+            return cast(_T, super().__call__(**data))
 
-        return super().__call__(*args, **kwargs)
+        return cast(_T, super().__call__(*args, **kwargs))
 
 
 class RequestModel(BaseModel, metaclass=_RequestModelMeta):
