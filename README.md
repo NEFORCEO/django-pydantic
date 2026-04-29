@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://django-pydantic.readthedocs.io">
-    <img src="https://raw.githubusercontent.com/NEFORCEO/django-pydantic/master/docs/stylesheets/logo.svg" alt="django-pydantic-client" width="200">
+    <img src="https://raw.githubusercontent.com/NEFORCEO/django-pydantic/master/docs/static/logo.svg" alt="django-pydantic-client" width="520">
   </a>
 </p>
 
