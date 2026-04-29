@@ -88,6 +88,7 @@ nav:
       - Request Data Sources: en/tutorial/request-data.md
       - Validation Errors: en/tutorial/validation.md
       - URL Parameters: en/tutorial/url-params.md
+      - Response Schema: en/tutorial/response-schema.md
       - Pydantic Features: en/tutorial/pydantic-features.md
     - Advanced User Guide:
       - en/advanced/index.md
@@ -105,6 +106,7 @@ nav:
       - Источники данных: ru/tutorial/request-data.md
       - Ошибки валидации: ru/tutorial/validation.md
       - Параметры URL: ru/tutorial/url-params.md
+      - Схема ответа: ru/tutorial/response-schema.md
       - Возможности Pydantic: ru/tutorial/pydantic-features.md
     - Продвинутое использование:
       - ru/advanced/index.md
