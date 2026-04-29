@@ -1,6 +1,6 @@
 # Custom Data Extraction
 
-By default, django-pydantic merges GET params, POST/JSON body, and URL kwargs. If you need different behaviour for a specific schema, you can override the extraction logic.
+By default, django-pydantic-client merges GET params, POST/JSON body, and URL kwargs. If you need different behaviour for a specific schema, you can override the extraction logic.
 
 ## Default extraction (reference)
 

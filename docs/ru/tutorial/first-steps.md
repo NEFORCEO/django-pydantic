@@ -5,7 +5,7 @@
 ## Установка
 
 ```bash
-pip install django-pydantic
+pip install django-pydantic-client
 ```
 
 ## Добавь в INSTALLED_APPS

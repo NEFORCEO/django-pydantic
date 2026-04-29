@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://django-pydantic.readthedocs.io">
-    <img src="https://raw.githubusercontent.com/NEFORCEO/django-pydantic/master/docs/stylesheets/logo.svg" alt="django-pydantic" width="200">
+    <img src="https://raw.githubusercontent.com/NEFORCEO/django-pydantic/master/docs/stylesheets/logo.svg" alt="django-pydantic-client" width="200">
   </a>
 </p>
 
@@ -12,14 +12,14 @@
   <a href="https://github.com/NEFORCEO/django-pydantic/actions/workflows/publish.yml">
     <img src="https://github.com/NEFORCEO/django-pydantic/actions/workflows/publish.yml/badge.svg" alt="CI / Publish">
   </a>
-  <a href="https://pypi.org/project/django-pydantic/">
-    <img src="https://img.shields.io/pypi/v/django-pydantic?color=%2344B78B&label=pypi" alt="PyPI version">
+  <a href="https://pypi.org/project/django-pydantic-client/">
+    <img src="https://img.shields.io/pypi/v/django-pydantic-client?color=%2344B78B&label=pypi" alt="PyPI version">
   </a>
-  <a href="https://pypi.org/project/django-pydantic/">
-    <img src="https://img.shields.io/pypi/pyversions/django-pydantic?color=%2344B78B" alt="Python versions">
+  <a href="https://pypi.org/project/django-pydantic-client/">
+    <img src="https://img.shields.io/pypi/pyversions/django-pydantic-client?color=%2344B78B" alt="Python versions">
   </a>
-  <a href="https://pypi.org/project/django-pydantic/">
-    <img src="https://img.shields.io/pypi/dm/django-pydantic?color=%2344B78B" alt="Downloads">
+  <a href="https://pypi.org/project/django-pydantic-client/">
+    <img src="https://img.shields.io/pypi/dm/django-pydantic-client?color=%2344B78B" alt="Downloads">
   </a>
   <a href="https://github.com/NEFORCEO/django-pydantic/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/NEFORCEO/django-pydantic?color=%2344B78B" alt="License">
@@ -34,7 +34,7 @@
 
 ---
 
-**django-pydantic** lets you replace manual request parsing in Django views with Pydantic models. Pass a `HttpRequest` directly to your schema — get a fully validated, typed Python object back, or an automatic HTTP 422 response if validation fails.
+**django-pydantic-client** lets you replace manual request parsing in Django views with Pydantic models. Pass a `HttpRequest` directly to your schema — get a fully validated, typed Python object back, or an automatic HTTP 422 response if validation fails.
 
 Key features:
 
@@ -53,7 +53,7 @@ Key features:
 ## Installation
 
 ```bash
-pip install django-pydantic
+pip install django-pydantic-client
 ```
 
 Add to `INSTALLED_APPS` — that's the only configuration step:

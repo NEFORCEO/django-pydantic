@@ -1,6 +1,6 @@
 # Request Data Sources
 
-When you call `MySchema(request)`, django-pydantic builds a flat `dict` by merging data from multiple sources. This page explains exactly what gets merged and in what order.
+When you call `MySchema(request)`, django-pydantic-client builds a flat `dict` by merging data from multiple sources. This page explains exactly what gets merged and in what order.
 
 ## Merge order
 

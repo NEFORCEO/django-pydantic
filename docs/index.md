@@ -18,7 +18,7 @@ hide:
       <circle cx="24" cy="24" r="3" fill="white"/>
       <path d="M24 34 L20 30 M24 34 L28 30" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
     </svg>
-    <span class="dp-wordmark-text">django-pydantic</span>
+    <span class="dp-wordmark-text">django-pydantic-client</span>
   </div>
 
   <p class="dp-tagline">
@@ -26,7 +26,7 @@ hide:
   </p>
   <div class="dp-install">
     <span class="dp-install-prompt">$</span>
-    <span class="dp-install-cmd">pip install django-pydantic</span>
+    <span class="dp-install-cmd">pip install django-pydantic-client</span>
   </div>
   <div class="dp-buttons">
     <a href="en/tutorial/first-steps/" class="dp-btn dp-btn-primary">Get Started</a>
@@ -114,7 +114,7 @@ hide:
   <div class="dp-compare-col dp-compare-old">
     <div class="dp-compare-header">
       <svg class="dp-compare-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
-      Without django-pydantic
+      Without django-pydantic-client
     </div>
 
 ```python
@@ -143,7 +143,7 @@ def signup(request):
   <div class="dp-compare-col dp-compare-new">
     <div class="dp-compare-header">
       <svg class="dp-compare-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-      With django-pydantic
+      With django-pydantic-client
     </div>
 
 ```python

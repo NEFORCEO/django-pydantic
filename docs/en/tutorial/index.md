@@ -1,6 +1,6 @@
 # Tutorial — User Guide
 
-This tutorial walks you through every feature of **django-pydantic**, from installation to advanced usage.
+This tutorial walks you through every feature of **django-pydantic-client**, from installation to advanced usage.
 
 Each section builds on the previous one. You can read it from start to finish or jump to the topic you need.
 

@@ -91,7 +91,7 @@ def item_detail(request, id):
 ```
 
 !!! warning "Не забывай передавать kwargs"
-    Если забудешь передать `id=id`, django-pydantic возьмёт `id` из query string
+    Если забудешь передать `id=id`, django-pydantic-client возьмёт `id` из query string
     (`?id=999`) — а это может быть не то, что нужно.
     Всегда передавай path-параметры явно.
 

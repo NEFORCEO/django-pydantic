@@ -142,4 +142,4 @@ MIDDLEWARE = [
 ]
 ```
 
-1. django-pydantic checks if it's already present and skips auto-insertion.
+1. django-pydantic-client checks if it's already present and skips auto-insertion.

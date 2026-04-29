@@ -1,6 +1,6 @@
 # Validation Errors
 
-When request data fails Pydantic validation, django-pydantic returns a structured **HTTP 422 Unprocessable Entity** response automatically. This page explains the error format and how to customise it.
+When request data fails Pydantic validation, django-pydantic-client returns a structured **HTTP 422 Unprocessable Entity** response automatically. This page explains the error format and how to customise it.
 
 ## How it works
 

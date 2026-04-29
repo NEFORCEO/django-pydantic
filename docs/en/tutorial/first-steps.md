@@ -5,7 +5,7 @@ Let's build the simplest possible validated Django view, step by step.
 ## Install
 
 ```bash
-pip install django-pydantic
+pip install django-pydantic-client
 ```
 
 ## Add to INSTALLED_APPS

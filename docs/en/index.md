@@ -1,6 +1,6 @@
-# django-pydantic
+# django-pydantic-client
 
-**django-pydantic** lets you replace manual request parsing with Pydantic models. Pass a Django `HttpRequest` directly to your schema and get a fully validated, typed Python object back — or an automatic HTTP 422 response if validation fails.
+**django-pydantic-client** lets you replace manual request parsing with Pydantic models. Pass a Django `HttpRequest` directly to your schema and get a fully validated, typed Python object back — or an automatic HTTP 422 response if validation fails.
 
 ## Features
 
@@ -21,7 +21,7 @@
 ## Installation
 
 ```bash
-pip install django-pydantic
+pip install django-pydantic-client
 ```
 
 ```python title="settings.py"

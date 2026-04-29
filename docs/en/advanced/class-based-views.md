@@ -70,7 +70,7 @@ class ProfileUpdateView(LoginRequiredMixin, View):
 
 ## Django REST Framework APIView
 
-If you use DRF, you can still use `RequestModel`. Note that DRF wraps `request.data`, but django-pydantic reads from the original `request.body`/`request.POST`/`request.GET` — so it works transparently:
+If you use DRF, you can still use `RequestModel`. Note that DRF wraps `request.data`, but django-pydantic-client reads from the original `request.body`/`request.POST`/`request.GET` — so it works transparently:
 
 ```python
 from rest_framework.views import APIView
@@ -88,6 +88,6 @@ class ProductView(APIView):
 ```
 
 !!! note
-    The DRF `request` object wraps the original `HttpRequest`. django-pydantic's
+    The DRF `request` object wraps the original `HttpRequest`. django-pydantic-client's
     `extract_data` reads `request.body`, `request.GET`, and `request.POST` — all
     of which are accessible on the DRF wrapper as well.

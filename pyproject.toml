@@ -1,5 +1,5 @@
 [project]
-name = "django-pydantic"
+name = "django-pydantic-client"
 version = "0.1.0"
 description = "Instantiate Pydantic models directly from Django HttpRequest for request validation"
 readme = "README.md"

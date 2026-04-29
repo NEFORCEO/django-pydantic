@@ -91,7 +91,7 @@ def item_detail(request, id):
 ```
 
 !!! warning "Don't skip the kwarg"
-    If you forget to pass `id=id`, django-pydantic will pick up `id` from the
+    If you forget to pass `id=id`, django-pydantic-client will pick up `id` from the
     query string (`?id=999`) instead — which may not be what you want.
     Always pass path parameters explicitly.
 

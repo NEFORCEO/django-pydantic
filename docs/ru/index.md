@@ -1,6 +1,6 @@
-# django-pydantic
+# django-pydantic-client
 
-**django-pydantic** позволяет заменить ручной парсинг запросов на Pydantic-модели. Передай Django `HttpRequest` напрямую в схему — получи валидированный типизированный объект или автоматический HTTP 422, если данные невалидны.
+**django-pydantic-client** позволяет заменить ручной парсинг запросов на Pydantic-модели. Передай Django `HttpRequest` напрямую в схему — получи валидированный типизированный объект или автоматический HTTP 422, если данные невалидны.
 
 ## Возможности
 
@@ -21,7 +21,7 @@
 ## Установка
 
 ```bash
-pip install django-pydantic
+pip install django-pydantic-client
 ```
 
 ```python title="settings.py"
