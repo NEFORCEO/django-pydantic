@@ -1,8 +1,11 @@
 from __future__ import annotations
 
-from typing import TypeVar, cast
+from typing import TYPE_CHECKING, Any, TypeVar, cast, overload
 
 from pydantic import BaseModel
+
+if TYPE_CHECKING:
+    from django.http import HttpRequest
 
 _PydanticMeta = type(BaseModel)
 _T = TypeVar("_T")
@@ -22,22 +25,8 @@ class _RequestModelMeta(_PydanticMeta):
 
 
 class RequestModel(BaseModel, metaclass=_RequestModelMeta):
-    """Pydantic BaseModel subclass that can be instantiated from a Django HttpRequest.
-
-    Usage::
-
-        class MySchema(RequestModel):
-            name: str
-            age: int
-
-        def my_view(request):
-            data = MySchema(request)         # validates GET/POST/JSON body
-            ...
-
-        def detail_view(request, pk):
-            data = MySchema(request, pk=pk)  # URL kwargs merged in
-            ...
-
-    On validation failure ``pydantic.ValidationError`` is raised.
-    ``PydanticValidationMiddleware`` converts it to a 422 JSON response automatically.
-    """
+    if TYPE_CHECKING:
+        @overload
+        def __init__(self, __request: HttpRequest, **path_kwargs: Any) -> None: ...
+        @overload
+        def __init__(self, **data: Any) -> None: ...
