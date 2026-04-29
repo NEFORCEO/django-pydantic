@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NEFORCEO/django-pydantic/master/docs/static/logo.svg" alt="django-pydantic-client" width="520">
+</p>
+
 # django-pydantic-client
 
 **django-pydantic-client** lets you replace manual request parsing with Pydantic models. Pass a Django `HttpRequest` directly to your schema and get a fully validated, typed Python object back — or an automatic HTTP 422 response if validation fails.
