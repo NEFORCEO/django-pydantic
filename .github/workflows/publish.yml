@@ -96,17 +96,8 @@ jobs:
           files: dist/*
           generate_release_notes: true
 
-      # Option A — Trusted Publishing (OIDC, no secret needed).
-      # Configure on PyPI: Account → Publishing → Add publisher:
-      #   owner: NEFORCEO  repo: django-pydantic  workflow: publish.yml
-      - name: Publish to PyPI (trusted publishing)
-        if: steps.tag_check.outputs.exists == 'false'
-        uses: pypa/gh-action-pypi-publish@release/v1
-
-      # Option B — API token (comment out Option A and uncomment below).
-      # Add PYPI_API_TOKEN to repo Settings → Secrets → Actions.
-      # - name: Publish to PyPI (token)
-      #   if: steps.tag_check.outputs.exists == 'false'
-      #   uses: pypa/gh-action-pypi-publish@release/v1
-      #   with:
-      #     password: ${{ secrets.PYPI_API_TOKEN }}
+       - name: Publish to PyPI (token)
+         if: steps.tag_check.outputs.exists == 'false'
+         uses: pypa/gh-action-pypi-publish@release/v1
+         with:
+           password: ${{ secrets.PYPI_API_TOKEN }}
