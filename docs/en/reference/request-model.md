@@ -105,6 +105,52 @@ Builds a flat `dict` from a Django `HttpRequest` by merging:
 
 ---
 
+## Class: ModelResponse
+
+```python
+from django_pydantic import ModelResponse
+```
+
+A `django.http.JsonResponse` subclass that serializes a Pydantic model instance directly.
+
+**Signature:**
+
+```python
+class ModelResponse(JsonResponse, Generic[M]):
+    def __init__(self, model: M, status: int = 200, **kwargs: Any) -> None
+```
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `model` | `pydantic.BaseModel` | The Pydantic model instance to serialize. |
+| `status` | `int` | HTTP status code. Default: `200`. |
+| `**kwargs` | `Any` | Passed through to `JsonResponse`. |
+
+**Serialization:** uses `model.model_dump_json()` — all Pydantic types (`UUID`, `datetime`, `Decimal`, custom serializers) are handled correctly.
+
+**Example:**
+
+```python
+from uuid import uuid4
+from django.http import HttpRequest
+from django_pydantic import ModelResponse
+from .schema import HelloRequest, HelloResponse
+
+
+def hello(request: HttpRequest) -> ModelResponse[HelloResponse]:
+    data = HelloRequest(request)
+    return ModelResponse(HelloResponse(id=uuid4(), message=f"Hello, {data.name}!"))
+```
+
+```python
+# Custom status code
+return ModelResponse(MySchema(...), status=201)
+```
+
+---
+
 ## Class: PydanticValidationMiddleware
 
 ```python
