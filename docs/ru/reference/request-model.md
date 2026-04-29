@@ -105,6 +105,52 @@ def extract_data(request: HttpRequest, **extra: Any) -> dict
 
 ---
 
+## Класс: ModelResponse
+
+```python
+from django_pydantic import ModelResponse
+```
+
+Подкласс `django.http.JsonResponse`, который сериализует экземпляр Pydantic-модели напрямую.
+
+**Сигнатура:**
+
+```python
+class ModelResponse(JsonResponse, Generic[M]):
+    def __init__(self, model: M, status: int = 200, **kwargs: Any) -> None
+```
+
+**Параметры:**
+
+| Параметр | Тип | Описание |
+|----------|-----|---------|
+| `model` | `pydantic.BaseModel` | Экземпляр Pydantic-модели для сериализации. |
+| `status` | `int` | HTTP статус-код. По умолчанию: `200`. |
+| `**kwargs` | `Any` | Передаются в `JsonResponse`. |
+
+**Сериализация:** использует `model.model_dump_json()` — все Pydantic-типы (`UUID`, `datetime`, `Decimal`, кастомные сериализаторы) обрабатываются корректно.
+
+**Пример:**
+
+```python
+from uuid import uuid4
+from django.http import HttpRequest
+from django_pydantic import ModelResponse
+from .schema import HelloRequest, HelloResponse
+
+
+def hello(request: HttpRequest) -> ModelResponse[HelloResponse]:
+    data = HelloRequest(request)
+    return ModelResponse(HelloResponse(id=uuid4(), message=f"Привет, {data.name}!"))
+```
+
+```python
+# Кастомный статус-код
+return ModelResponse(MySchema(...), status=201)
+```
+
+---
+
 ## Класс: PydanticValidationMiddleware
 
 ```python
