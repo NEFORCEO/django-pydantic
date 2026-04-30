@@ -51,4 +51,23 @@ include = ["django_pydantic/", "README.md", "LICENSE"]
 [dependency-groups]
 dev = [
     "mkdocs-material>=9.7.6",
+    "ruff>=0.4.0",
+    "mypy>=1.10.0",
+    "django-stubs>=5.0.0",
 ]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+plugins = ["mypy_django_plugin.main"]
+
+[tool.django-stubs]
+django_settings_module = "test_app.config.settings"
