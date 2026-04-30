@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 160" width="580" height="160">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="580" height="160" rx="16" fill="url(#bg)"/>
+
+  <!-- Shield icon -->
+  <path d="M48 36 L80 50 L80 88 Q80 114 48 124 Q16 114 16 88 L16 50 Z"
+        fill="none" stroke="#44B78B" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M48 50 L68 59 L68 88 Q68 107 48 114 Q28 107 28 88 L28 59 Z"
+        fill="#44B78B" opacity="0.15"/>
+
+  <!-- Checkmark inside shield -->
+  <polyline points="34,82 44,93 62,68"
+            fill="none" stroke="#44B78B" stroke-width="4"
+            stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Main text — single element with tspan to avoid clipping -->
+  <text x="104" y="97"
+        font-family="'SF Mono', 'Fira Code', 'Consolas', monospace"
+        font-size="44"
+        font-weight="700"
+        letter-spacing="-0.5">
+    <tspan fill="#44B78B">django</tspan><tspan fill="#ffffff" opacity="0.3" font-weight="300">-</tspan><tspan fill="#E92063">pydantic</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="104" y="122"
+        font-family="'SF Pro Text', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        fill="#ffffff"
+        opacity="0.3"
+        letter-spacing="0.5">Validate Django requests with Pydantic</text>
+</svg>

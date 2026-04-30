@@ -1,0 +1,324 @@
+/* ── Brand colours ──────────────────────────────────────────────────────── */
+:root {
+  --dp-green:        #44B78B;
+  --dp-green-dark:   #2A9068;
+  --dp-green-light:  #68C9A0;
+  --dp-teal:         #00897B;
+  --dp-hero-bg:      #0d1117;
+  --dp-glow:         rgba(68, 183, 139, 0.15);
+  --dp-glow-strong:  rgba(68, 183, 139, 0.30);
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #44B78B;
+  --md-primary-fg-color--light: #68C9A0;
+  --md-primary-fg-color--dark:  #2A9068;
+  --md-accent-fg-color:         #00897B;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #44B78B;
+  --md-primary-fg-color--light: #68C9A0;
+  --md-primary-fg-color--dark:  #2A9068;
+  --md-accent-fg-color:         #5ECFA3;
+}
+
+/* ── Hero ───────────────────────────────────────────────────────────────── */
+.dp-hero {
+  background: var(--dp-hero-bg);
+  background-image:
+    radial-gradient(ellipse 70% 60% at 50% -10%, var(--dp-glow), transparent),
+    radial-gradient(ellipse 40% 30% at 80% 80%, rgba(68,183,139,.06), transparent);
+  padding: 5.5rem 1.5rem 4.5rem;
+  text-align: center;
+  border-radius: 0 0 1.5rem 1.5rem;
+  margin: -0.8rem -0.8rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.dp-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(68,183,139,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(68,183,139,.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black, transparent);
+  pointer-events: none;
+}
+
+/* ── Badges ─────────────────────────────────────────────────────────────── */
+.dp-badge-row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.dp-badge {
+  display: inline-block;
+  padding: 0.28rem 0.8rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.dp-badge-django   { background: rgba(68,183,139,.12);  color: #6ee7b7; border: 1px solid rgba(68,183,139,.25); }
+.dp-badge-pydantic { background: rgba(233,32,99,.10);   color: #f9a8d4; border: 1px solid rgba(233,32,99,.22); }
+.dp-badge-python   { background: rgba(99,179,237,.10);  color: #93c5fd; border: 1px solid rgba(99,179,237,.22); }
+
+/* ── Wordmark ────────────────────────────────────────────────────────────── */
+.dp-wordmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.dp-wordmark-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  box-shadow: 0 0 40px var(--dp-glow-strong);
+  flex-shrink: 0;
+}
+
+.dp-wordmark-text {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  background: linear-gradient(135deg, #ffffff 30%, var(--dp-green-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Tagline ─────────────────────────────────────────────────────────────── */
+.dp-tagline {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  color: rgba(255,255,255,0.55);
+  max-width: 480px;
+  margin: 0 auto 2rem;
+  line-height: 1.65;
+  position: relative;
+}
+
+/* ── Install pill ────────────────────────────────────────────────────────── */
+.dp-install {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 0.7rem;
+  padding: 0.55rem 1.4rem;
+  font-family: var(--md-code-font-family);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  transition: border-color .2s, background .2s;
+  position: relative;
+  cursor: default;
+}
+
+.dp-install:hover {
+  border-color: var(--dp-green);
+  background: rgba(68,183,139,.06);
+}
+
+.dp-install-prompt {
+  color: rgba(255,255,255,0.25);
+  user-select: none;
+}
+
+.dp-install-cmd { color: var(--dp-green-light); }
+
+/* ── CTA buttons ─────────────────────────────────────────────────────────── */
+.dp-buttons {
+  display: flex;
+  gap: 0.65rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.dp-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  transition: transform .15s, box-shadow .15s, background .15s;
+  white-space: nowrap;
+}
+
+.dp-btn:hover { transform: translateY(-2px); }
+
+.dp-btn-primary {
+  background: var(--dp-green);
+  color: #fff !important;
+  box-shadow: 0 4px 24px rgba(68,183,139,.4);
+}
+
+.dp-btn-primary:hover {
+  background: var(--dp-green-light);
+  box-shadow: 0 6px 32px rgba(68,183,139,.55);
+}
+
+.dp-btn-secondary {
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,.8) !important;
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.dp-btn-secondary:hover { background: rgba(255,255,255,.1); }
+
+.dp-btn-ghost {
+  color: rgba(255,255,255,.5) !important;
+  border: 1px solid rgba(255,255,255,.08);
+  background: transparent;
+}
+
+.dp-btn-ghost:hover {
+  color: rgba(255,255,255,.8) !important;
+  border-color: rgba(255,255,255,.2);
+}
+
+/* ── Feature grid ────────────────────────────────────────────────────────── */
+.dp-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.1rem;
+  margin: 0 0 3rem;
+}
+
+.dp-feature {
+  padding: 1.5rem 1.4rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+}
+
+.dp-feature:hover {
+  border-color: var(--dp-green);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(68,183,139,.1);
+}
+
+.dp-feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.6rem;
+  background: rgba(68,183,139,.1);
+  border: 1px solid rgba(68,183,139,.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.dp-feature-icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--dp-green);
+  stroke: var(--dp-green);
+}
+
+.dp-feature h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 0.45rem;
+  color: var(--md-default-fg-color);
+}
+
+.dp-feature p {
+  font-size: 0.855rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ── Comparison ──────────────────────────────────────────────────────────── */
+.dp-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.dp-compare-col {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.dp-compare-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.dp-compare-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.dp-compare-old .dp-compare-header {
+  background: rgba(239,68,68,.08);
+  color: #fca5a5;
+  border-bottom: 1px solid rgba(239,68,68,.15);
+}
+
+.dp-compare-old .dp-compare-icon { stroke: #fca5a5; }
+
+.dp-compare-new .dp-compare-header {
+  background: rgba(68,183,139,.08);
+  color: var(--dp-green-light);
+  border-bottom: 1px solid rgba(68,183,139,.15);
+}
+
+.dp-compare-new .dp-compare-icon { stroke: var(--dp-green-light); }
+
+.dp-compare-col .highlight {
+  margin: 0;
+  border-radius: 0;
+}
+
+.dp-compare-col pre {
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* ── Typography tweaks ───────────────────────────────────────────────────── */
+.md-typeset h1 { font-weight: 800; letter-spacing: -0.015em; }
+.md-typeset h2 { font-weight: 700; }
+.md-typeset code { border-radius: 0.3rem; }
+
+.md-typeset .admonition,
+.md-typeset details { border-radius: 0.6rem; }
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 800px) {
+  .dp-compare { grid-template-columns: 1fr; }
+  .dp-hero { padding: 3.5rem 1rem 3rem; margin: -0.4rem -0.4rem 2.5rem; }
+  .dp-wordmark-text { font-size: 1.9rem; }
+}
+
+@media (max-width: 480px) {
+  .dp-features { grid-template-columns: 1fr; }
+}
