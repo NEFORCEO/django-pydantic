@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from typing import Callable
+from collections.abc import Callable
 
-from django.http import HttpRequest, JsonResponse
+from django.http import HttpRequest, HttpResponse, JsonResponse
 from pydantic import ValidationError
 
 
@@ -22,15 +22,15 @@ class PydanticValidationMiddleware:
         }
     """
 
-    def __init__(self, get_response: Callable[[HttpRequest], JsonResponse]) -> None:
+    def __init__(self, get_response: Callable[[HttpRequest], HttpResponse]) -> None:
         self.get_response = get_response
 
-    def __call__(self, request: HttpRequest) -> JsonResponse:
+    def __call__(self, request: HttpRequest) -> HttpResponse:
         return self.get_response(request)
 
     def process_exception(
         self, request: HttpRequest, exception: Exception
-    ) -> JsonResponse | None:
+    ) -> HttpResponse | None:
         """Catch ValidationError and return a structured 422 response."""
         if isinstance(exception, ValidationError):
             return JsonResponse(

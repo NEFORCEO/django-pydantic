@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 from typing import Any, Generic, TypeVar
 
 from django.http import JsonResponse
@@ -12,7 +11,7 @@ _M = TypeVar("_M", bound=BaseModel)
 class ModelResponse(JsonResponse, Generic[_M]):
     def __init__(self, model: _M, status: int = 200, **kwargs: Any) -> None:
         super().__init__(
-            json.loads(model.model_dump_json()),
+            model.model_dump(mode="json"),
             status=status,
             **kwargs,
         )
