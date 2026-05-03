@@ -2,118 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://django-pydantic.readthedocs.io/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/advanced/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/advanced/class-based-views/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/advanced/custom-extraction/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/reference/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/reference/request-model/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/tutorial/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/tutorial/first-steps/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/tutorial/pydantic-features/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/tutorial/request-data/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/tutorial/request-schema/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/tutorial/response-schema/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/tutorial/url-params/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/en/tutorial/validation/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/advanced/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/advanced/class-based-views/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/advanced/custom-extraction/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/reference/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/reference/request-model/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/tutorial/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/tutorial/first-steps/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/tutorial/pydantic-features/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/tutorial/request-data/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/tutorial/request-schema/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/tutorial/response-schema/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/tutorial/url-params/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
     <url>
          <loc>https://django-pydantic.readthedocs.io/ru/tutorial/validation/</loc>
-         <lastmod>2026-04-30</lastmod>
+         <lastmod>2026-05-03</lastmod>
     </url>
 </urlset>
