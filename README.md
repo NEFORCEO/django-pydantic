@@ -24,9 +24,6 @@
   <a href="https://github.com/NEFORCEO/django-pydantic/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/NEFORCEO/django-pydantic?color=%2344B78B" alt="License">
   </a>
-  <a href="https://pypi.org/project/django-pydantic-client/">
-    <img src="https://img.shields.io/pypi/dm/django-pydantic-client?color=%2344B78B&label=downloads" alt="Monthly downloads">
-  </a>
   <a href="https://pepy.tech/projects/django-pydantic-client">
     <img src="https://img.shields.io/pepy/dt/django-pydantic-client?color=%2344B78B&label=total%20downloads" alt="Total downloads">
   </a>
