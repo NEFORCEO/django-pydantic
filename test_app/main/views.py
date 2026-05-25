@@ -3,7 +3,6 @@ from uuid import uuid4
 from django.http import HttpRequest
 
 from django_pydantic import ModelResponse
-
 from test_app.main.schema import HelloRequest, HelloResponse
 
 
